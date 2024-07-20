@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Evaluation</title>
+</head>
+<body>
+    <h1>Model Evaluation</h1>
+    
+    <h2>Logistic Regression Results:</h2>
+    <p>Accuracy: {{ lr_accuracy }}</p>
+    <h3>Classification Report:</h3>
+    <pre>{{ lr_report }}</pre>
+    <h3>Predictions Distribution:</h3>
+    <img src="data:image/png;base64,{{ lr_plot }}" alt="Logistic Regression Predictions Distribution">
+    
+    <h2>Random Forest Classifier Results:</h2>
+    <p>Accuracy: {{ rf_accuracy }}</p>
+    <h3>Classification Report:</h3>
+    <pre>{{ rf_report }}</pre>
+    <h3>Predictions Distribution:</h3>
+    <img src="data:image/png;base64,{{ rf_plot }}" alt="Random Forest Classifier Predictions Distribution">
+</body>
+</html>
